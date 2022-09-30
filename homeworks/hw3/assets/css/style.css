@@ -56,6 +56,7 @@ transition period of 0.2 seconds*/
 .item:hover {
     opacity: 1;
     transition: opacity 0.2s;
+    cursor: pointer;
 }
 
 /* PROBLEM 9: Add a click effect to the follow button, so
@@ -75,6 +76,6 @@ navigation has an opacity of 1 when hovered over!*/
 
 /* PROBLEM 11: In one selection, make the follow button, picture
 items, and nav bar items have a pointer cursor */
-#follow-button:hover, #items:hover, .navbar-item:hover {
+#follow-button:hover, .item:hover, .navbar-item:hover {
     cursor: pointer;
 }
