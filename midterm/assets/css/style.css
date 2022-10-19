@@ -1,0 +1,160 @@
+/* bayon-regular - khmer */
+@font-face {
+    font-family: 'Bayon';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/bayon-v29-khmer-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/bayon-v29-khmer-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/bayon-v29-khmer-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/bayon-v29-khmer-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/bayon-v29-khmer-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/bayon-v29-khmer-regular.svg#Bayon') format('svg'); /* Legacy iOS */
+  }
+
+#pasta-bg-img {
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.navbar a {
+    color: white;
+    font-family: "Lato";
+    font-size: 18px;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+#home-box {
+    background-color: #AA1515; 
+    width: 100px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+}
+
+#home-box:hover {
+    transform: scale(1.25);
+}
+
+#menu-box:hover {
+    transform: scale(1.25);
+}
+
+#location-box:hover {
+    transform: scale(1.25);
+}
+
+#contact-box:hover {
+    transform: scale(1.25);
+}
+
+nav a:hover {
+    color: black;
+    transform: size(1.25);
+}
+
+nav a {
+    color: white;
+    font-family: "Lato";
+    font-size: 18px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#home {
+    background-color: #AA1515;
+}
+
+#black-rectangle {
+    background-color: black;
+    opacity: 50%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+body {
+    background-image: url("../img/pasta-dish-background.jpg");
+    background-size: cover;
+}
+
+.main-text-splash {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    /* bring your own prefixes */
+}
+
+.main-text-splash #italian-food {
+    font-family: "Bayon";
+    color: white;
+    font-size: 64px;
+    letter-spacing: 3px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: -25px;
+}
+
+.main-text-splash #gypsy-name {
+    font-family: "Lato";
+    font-weight: 300;
+    color: white;
+    font-size: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-button {
+    background-color: #AA1515;
+    width: 154px;
+    height: 40px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+.menu-button a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: "Lato";
+}
+
+.menu-button:hover {
+    transform: scale(1.10);
+}
+
+
+#white-rectangle {
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    top: 100px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
