@@ -1,112 +1,94 @@
-body {
-    margin: 0;
-    padding: 0;
+.nav{
+    /* [Problem 1] 
+        FIXME: Set the width of the nav class to 85px. */
+    width: 85px;
 }
-
-header {
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background: white;
-    /* PROBLEM 1: Make the header stick to the top as you scroll */
-    position: fixed;
-
-}
-
-.content {
-    width: 800px;
-    /* PROBLEM 2: Align the page content to the center of the screen */
-    margin: auto;
+.nav--button{
+    /*  [Problem 2]
+        FIXME: Initialize flexbox vertically. Align the text and icons so that they
+        are center aligned. */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
-
-#image-banner {
-    background-image: url('../img/sf_banner.png');
-    background-size: cover;
-    width: 100%;
-    height: 600px;
-}
-
-
-#other-posts {
-    overflow: hidden;
-    margin-bottom: 100px;
-}
-
-.image-card, .image-card-color-overlay {
-    width: 380px;
-    height: 200px;
-}
-
-.image-card {
-    display: inline-block;
-    float: left;
-    overflow: hidden;
-    margin-right: 40px;
-    /* PROBLEM 3: Give .image-card the appropriate position type */
-    position: relative;
+.dashboard{
+    /*  [Problem 3]
+        FIXME: Add some breathing room! The dashboard portion is a bit tight! 
+        (Hint: use padding!) */
+    padding: 40px;
 
 }
+.dashboard--title{
+    /*  [Problem 4]
+        FIXME: Use flex to add the correct spacing between the "Dashboard" text and
+        the three dot button icon that you added previously. Align them to the 
+        center of each item. */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 
-.image-card:last-child {
-    margin-right: 0;
 }
+.dashboard--classes{
+    /*  [Problem 5]
+        FIXME: Use flexbox to make the classes tabs wrap in a 3x2 setup.
+        Use flexbox to create equal spacing between each box. */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 
-.image-card img {
-    width: 100%;
 }
+.dashboard--classes__box{
+    /*  [Problem 6]
+        FIXME: Set the widths of each class tab to be 31.5% of the width;
+        [Problem 7]
+        FIXME: Add 35px to the space under each box. (Choose carefully!) */
+    width: 31.5%;
+    margin-bottom: 35px;
 
-.image-card-color-overlay {
-    position: absolute;
-    /* PROBLEM 4: Move the color overlay to cover the image properly */
-    top: 0px;
-    left: 0px;
-    /* PROBLEM 5: What should the opacity be when there is no hover? */
-    opacity: 0;
-    transition: 0.3s;
-    background-color: navy;
+        
 }
+/*  [Problem 8]
+    FIXME: when the dashboard--classes__box class is hovered over, add a
+	darker shadow around the edges of the class tab, just like the real
+	bcourses interface. Use this: 0 4px 10px rgba(0,0,0,0.35)
 
-.image-card:hover .image-card-color-overlay {
-    /* PROBLEM 5: Pick an opacity for the blue hover effect */
-    opacity: 0.7;
-}
-
-.image-card-text {
-    /* PROBLEM 6: Similar to .image-card-cover-overlay, position the card text */
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    font-family: "Varela Round";
-    color: white;
+	Write your own class identifier. */
+.dashboard--classes__box:hover {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.35);
 }
 
 
-/* PROBLEM 7: Improve the typography and colors of this page! */
+.dashboard--classes__box__image{
+    /*  [Problem 9]
+        FIXME: The class tab should have a border-radius of 5px along the top
+    	of the boxes. 
 
-#title {
-    font-family: 'Roboto';
-    font-size: 20px;
-    color: #1A385A;
+    	(Hint: Make sure you only add it to the top left and top
+    	right corners. Simply put, the answer is NOT border-radius: 5px.) */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
 }
+/*  [Problem 10]
+    FIXME: When h2, h3, and h4 are hovered over, add an underline and
+    change the cursor to a pointer. Write the selectors and the styles!
 
-h1 {
-    font-family: "Varela Round";
-    font-size: 30px;
-    text-align: center;
-}
+    Write your own class identifier. */
 
-h2 {
-    font-family: "Poppins";
-    font-size: 15px;
-    text-align: center;
-}
+    h2:hover, h3:hover, h4:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
 
-h3 {
-    font-family: "Poppins";
-    text-align: center;
-}
 
-p {
-    font-family: 'Poppins';
+.notifications__notifs .notifications__notifs--box{
+    /*  [Problem 11]
+        FIXME: Turn this element into a flex element and use the correct property
+        to align the announcement icon and the text box. */
+    flex: display;
+    flex-direction: row-reverse;
+    align-items: flex-start;
 }
