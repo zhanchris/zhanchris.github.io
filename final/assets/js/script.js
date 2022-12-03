@@ -20,7 +20,7 @@ function changeImgToFall() {
     }, 1000);
     document.getElementById("season-text").innerHTML = "Fall."
 
-    video.src = "assets/vid/fall 2021.mp4"
+    video.src = "assets/img/fall 2021.mp4"
 
     fallButton.classList.remove("spring");
     fallButton.classList.add("fall")
@@ -49,7 +49,7 @@ function changeImgToSpring() {
 
     document.getElementById("season-text").innerHTML = "Spring."
 
-    video.src = "assets/vid/spring 2022.mp4"
+    video.src = "assets/img/spring 2022.mp4"
 
     fallButton.classList.remove("fall");
     fallButton.classList.add("spring")
