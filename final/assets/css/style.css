@@ -32,10 +32,6 @@
   }
 
 
-#video.playing {
-    opacity: 100%;
-    transition: all 0.3s;
-}
 
 body {
     /*background-image: url("../img/sanFranSpring.jpg"); */

@@ -20,7 +20,7 @@ function changeImgToFall() {
     }, 1000);
     document.getElementById("season-text").innerHTML = "Fall."
 
-    video.src = "assets/img/fall 2021.mp4"
+    video.src = "https://www.youtube.com/embed/JrfHZpLZdV8?controls" /*"assets/img/fall 2021.mp4" */
 
     fallButton.classList.remove("spring");
     fallButton.classList.add("fall")
@@ -49,7 +49,7 @@ function changeImgToSpring() {
 
     document.getElementById("season-text").innerHTML = "Spring."
 
-    video.src = "assets/img/spring 2022.mp4"
+    video.src = "https://www.youtube.com/embed/JrfHZpLZdV8?controls"/*"assets/img/spring 2022.mp4"*/
 
     fallButton.classList.remove("fall");
     fallButton.classList.add("spring")
@@ -72,12 +72,12 @@ fallButton.onclick = function() {
 }
 
 let mts = document.getElementById('mts');
+var iframeID = "video"; 
 
 document.getElementById('play').onclick = function () {
     video.classList.remove("invisible");
     document.getElementById("vid-con").classList.remove("invisible");
     video.classList.add("visible");
-    video.play();
     mts.classList.add("invisible");
     blkRec.classList.remove("visible")
     blkRec.classList.add("invisible");
@@ -105,8 +105,6 @@ pauseBtn.onclick = function() {
 let closeBtn = document.getElementById('close');
 
 closeBtn.onclick = function() {
-    video.currentTime = 0;
-    video.pause()
     video.classList.remove("visible");
     video.classList.add("invisible");
     mts.classList.remove("invisible");
